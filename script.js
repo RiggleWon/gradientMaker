@@ -13,9 +13,10 @@ function changeColor() {
   css.textContent = body.style.background + ";";
 }
 
+firstColor.value = "#ff0000";
+secondColor.value = "#ffff00";
+changeColor();
+
 firstColor.addEventListener("input", changeColor);
 
 secondColor.addEventListener("input", changeColor);
-
-localStorage.setItem("changeColor", firstColor.value);
-localStorage.setItem("secondColor", secondColor.value);
